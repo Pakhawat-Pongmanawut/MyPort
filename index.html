@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id ="desktop-nav">
+       <div class="MyFace">PORTFOLIO</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="sandvich-nav">
+        <div class="MyFace">PORTFOLIO</div>
+        <div class="sandvich-menu">
+            <div class="sandvich-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./ItsMe3.JPG" alt="Tom profile picture">
+        </div>
+        <div class="section__text">
+            <h1 class="title">Pakhawat<br>Pongmanawut</h1>
+            <br>
+            <p class="section__text__p2">Game Design</p>
+            <p class="section__text__p3">3D Animator</p>
+        </div>        
+    </section>
+    <section id="about">
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./ItsMe2.JPG" 
+                    alt="profile picture" 
+                    class="about-pic"/>
+                </div>
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Works.png" alt="MyWorks icon" 
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>3D Animator <br>Game Design</p>
+                </div>
+                <div class="details-container">
+                    <img src="./Education.png" alt="MyEducation icon" 
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors <br>Game Development KMUTT</p>
+                </div>
+                <div class="text-container">
+                    <h3> "Anything can happen" </h3>
+                    <p>Greeting visitor! I'm Pakhawat Pongmanawut or just call me "Tom". 
+                       I'm junior Game Design and 3D Animator.
+                       How i become Game Developer? So i in love with Video Game.
+                       But i found that i like about Game Design and 3D Animator.
+                    </p>
+                    <h2> My Skills </h2>
+                    <div class="skill-container">
+                        <img src="./Maya.png" alt="MySkill icon">
+                        <img src="./Photoshop.png" alt="MySkill icon">
+                        <img src="./Illustrator.png" alt="MySkill icon">
+                        <img src="./Unreal.png" alt="MySkill icon">
+                    </div>
+                </div>
+                </div>
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+                <div class="details-container color-container">
+                    <div class="assignment-container">
+                    <a href="Tso Chicken/recipe.html"> Assignment 4  </a> , 
+                    <a href="Pantip Copy/index.html"> Assignment 5  </a> , 
+                    <a href="Lock In/register.html"> Assignment 6  </a> , 
+                    <a href="https://drive.google.com/drive/folders/1P-DpAldH27m1Ll9N09hUjxleTvp_CWe7?usp=sharing"> 3D Animation </a>
+                </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">My Contact</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Gmail.png" 
+                alt="My Gmail"
+                class="icon contact-icon"
+                />
+            <p><a href="mailto:MR.RYOSHADOW12@gmail.com">MR.RYOSHADOW12@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Facebook.png" 
+                alt="My Facebook"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.facebook.com/profile.php?id=100024366472966">Facebook</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

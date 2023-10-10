@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600&display=swap');* 
+body
+{
+    font-family: 'Martian Mono', monospace;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+p
+{
+    color: rgb(255, 174, 61);
+}
+
+/*เปลี่ยนหน้า*/
+a, .btn
+{
+    transition: all 300ms ease;
+}
+
+/*หน้าเว็บ*/
+nav, .nav-links
+{
+    display: flex;
+}
+nav
+{
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+}
+.nav-links
+{
+    gap: 2rem;
+    list-style: none;
+    font-size: 2rem;
+}
+a
+{
+    color: rgb(233, 116, 81);
+    text-decoration: none;
+    text-decoration: white;
+}
+a:hover
+{
+    color: rgb(192, 64, 0);
+    text-decoration: underline;
+    text-underline-offset: 0.75rem;
+}
+.MyFace
+{
+    font-size: 3.5rem;
+    color: rgb(192, 64, 0);
+}
+.MyFace:hover
+{ 
+    cursor: default;
+}
+
+
+/*ชั้นหน้าเมนู*/
+#sandvich-nav
+{ 
+    display: none;
+}
+.sandvich-menu
+{
+    position: relative;
+    display: inline-block;
+}
+
+.sandvich-icon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.sandvich-icon span
+{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a 
+{  
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li
+{
+    list-style: none;
+}
+
+.menu-links.open
+{
+    max-height: 300px;
+}
+
+
+.sandvich-icon.open span:first-child
+{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.sandvich-icon.open span:nth-child(2)
+{
+    opacity: 0;
+}
+
+.sandvich-icon.open span:last-child
+{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.sandvich-icon span:first-child
+{  
+    transform: none;
+}
+
+.sandvich-icon span:nth-child(2)
+{  
+    opacity: 1;
+}
+
+.sandvich-icon span:last-child
+{  
+    transform: none;
+}
+
+/*แยก section*/
+section
+{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container
+{
+    display: flex;
+}
+
+/*ข้อมูลต่างๆ*/
+#profile
+{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    height: 60vh;
+}
+
+.section__pic-container
+{   
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text
+{
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p 
+{
+    font-weight: 600;
+}
+
+.section__text p1 
+{
+    text-align: center;
+}
+
+.section__text p2 
+{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30rem;
+    gap: 5rem;
+    grid-column: 2;
+}
+
+/*ตัวชี้*/
+.icon
+{
+    cursor: pointer;
+    height: 5rem;
+}
+
+/*about*/
+#about
+{
+    position: relative;
+}
+.about-containers
+{
+    gap: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.about-details-container
+{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, 
+.about-details-container
+{
+    display: flex;
+}
+
+.about-pic
+{
+    border-radius: 2rem;
+}
+
+.details-container
+{
+    padding: 2rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 2rem;
+    border: rgb(233, 116, 81) 0.2rem solid;
+    border-color: rgb(233, 116, 81);
+    text-align: center;
+}
+
+.section-container
+{
+    gap: 7rem;
+    height: 57.5%;
+}
+
+.section__pic-container
+{
+    height: 440px;
+    width: 440px;
+    margin: auto 0;
+}
+h3, h2
+{
+    text-align: center;
+}
+
+.skill-container
+{
+    display: flex;
+    height: 235px;
+    width: 625px;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-container > img
+{
+    height: 15%;
+    margin-left: auto;
+
+}
+
+/*PROJECT*/
+
+#project
+{
+    position: relative;
+}
+
+.color-container
+{
+    border-color: rgb(139, 64, 0);
+    background-color: white;
+}
+
+.projects-title
+{
+    margin: 1.5rem;
+    color: rgb(255, 174, 61);
+}
+
+/*CONTACT*/
+
+#contact
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.contact-info-upper-container
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) solid;
+    border-color: rgb(233, 116, 81);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.contact-info-container p
+{
+    font-size: larger;
+}
+
+.contact-icon
+{
+    cursor: default;
+    height: 3rem;
+}
+
+/*FOOTER*/
+
+footer
+{
+    height: 30vh;
+    margin: 1rem;
+}
+
+/*REPONSIVE*/
+@media screen and (max-width:1400px)
+{
+    #profile
+    {
+        height: 85vh;
+        margin-bottom: 3rem;
+    }
+    .about-containers
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px)
+{
+    #desktop-nav
+    {
+        display: none;
+    }
+    #sandvich-nav
+    {
+        display: flex;
+    }
+    #profile, .section-container
+    {
+        display: block;
+    }
+    section, .section-container
+    {
+        height: fit-content;
+    }
+    section
+    {
+        margin: 0 5%;
+    }
+    .section__pic-container
+    {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 2rem;
+    }
+    .text-container
+    {
+        text-align: justify;
+    }
+    .about-containers
+    {
+        margin-top: 0;
+    }
+    .skill-container img
+    {
+        height: 50%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    #contact, footer
+    {
+        height: 40vh;
+    }
+    #profile
+    {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    footer nav
+    {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container
+    {
+        flex-wrap: wrap;
+    }
+    .contact-info-container
+    {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a
+    {
+        font-size: 1rem;
+    }
+    .MyFace
+    {
+        font-size: 2rem;  
+    }
+    .nav-links
+    {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .section__pic-container
+    {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .title
+    {
+        font-size: 2rem;
+    }
+    .text-container
+    {
+        text-align: justify;
+    }
+    .skill-container img
+    {
+        height: 25%;
+        flex-wrap: wrap;
+    }
+}
